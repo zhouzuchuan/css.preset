@@ -1,5 +1,5 @@
 {
-  "name": "preset.css",
+  "name": "css.preset",
   "version": "0.0.1",
   "description": "css preset",
   "main": "preset.min.css",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zhouzuchuan/preset.css.git"
+    "url": "git+https://github.com/zhouzuchuan/css.preset.git"
   },
   "keywords": [
     "css",
@@ -19,9 +19,9 @@
   "author": "fezzc",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/zhouzuchuan/preset.css/issues"
+    "url": "https://github.com/zhouzuchuan/css.preset/issues"
   },
-  "homepage": "https://github.com/zhouzuchuan/preset.css#readme",
+  "homepage": "https://github.com/zhouzuchuan/css.preset#readme",
   "devDependencies": {
     "less": "^3.9.0",
     "less-plugin-autoprefix": "^2.0.0",

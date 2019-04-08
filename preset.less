@@ -7,274 +7,266 @@
 */
 
 * {
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-kerning: auto;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-kerning: auto;
 }
 
 html {
-    -webkit-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
 .lay-list {
-    font-size: 0;
-    letter-spacing: -4px;
-    li,
-    & > .item {
-        display: inline-block;
-        font-size: 12px;
-        letter-spacing: 0;
-        vertical-align: top;
-    }
+  font-size: 0;
+  letter-spacing: -4px;
+  li,
+  & > .item {
+    display: inline-block;
+    font-size: 12px;
+    letter-spacing: 0;
+    vertical-align: top;
+  }
 }
 
 .flex-box {
-    display: flex;
-    width: 100%;
+  display: flex;
+  width: 100%;
+  & > .item {
+    display: block;
+    flex: 1;
+  }
+  &.vertical {
+    flex-direction: column;
+    height: 100%;
     & > .item {
-        display: block;
-        flex: 1;
+      overflow: auto;
     }
-    &.vertical {
-        flex-direction: column;
-        height: 100%;
-        & > .item {
-            overflow: auto;
-        }
-    }
-    .box-pack {
-        display: -webkit-box;
-        -webkit-box-orient: horizontal;
-        -webkit-box-pack: center;
-        -webkit-box-align: center;
-    }
+  }
+  .box-pack {
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+  }
 }
 
 .help-middle {
+  height: 100%;
+  font-size: 0;
+  text-align: center;
+  letter-spacing: -4px;
+  &::after {
+    display: inline-block;
+    width: 0;
     height: 100%;
-    font-size: 0;
-    text-align: center;
-    letter-spacing: -4px;
-    &::after {
-        display: inline-block;
-        width: 0;
-        height: 100%;
-        letter-spacing: 0;
-        vertical-align: middle;
-        content: '';
-    }
-    & > :first-child {
-        display: inline-block;
-        font-size: 12px;
-        text-align: left;
-        letter-spacing: 0;
-        vertical-align: middle;
-    }
+    letter-spacing: 0;
+    vertical-align: middle;
+    content: '';
+  }
+  & > :first-child {
+    display: inline-block;
+    font-size: 12px;
+    text-align: left;
+    letter-spacing: 0;
+    vertical-align: middle;
+  }
 }
 
 .cf {
-    zoom: 1;
+  zoom: 1;
 
-    &::after {
-        display: block;
-        height: 0;
-        clear: both;
-        visibility: hidden;
-        content: '.';
-    }
+  &::after {
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    content: '.';
+  }
 }
 
 .ell {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .wp100 {
-    width: 100%;
+  width: 100%;
 }
 
 .hp100 {
-    height: 100%;
+  height: 100%;
 }
 
 .pss {
-    position: static;
+  position: static;
 }
 .psr {
-    position: relative;
+  position: relative;
 }
 .psa {
-    position: absolute;
+  position: absolute;
 }
 .psf {
-    position: fixed;
+  position: fixed;
 }
 
 .fln {
-    float: none;
+  float: none;
 }
 .fll {
-    float: left;
+  float: left;
 }
 .flr {
-    float: right;
+  float: right;
 }
 
 .cln {
-    clear: none;
+  clear: none;
 }
 .cll {
-    clear: left;
+  clear: left;
 }
 .clr {
-    clear: right;
+  clear: right;
 }
 .clb {
-    clear: both;
+  clear: both;
 }
 
 .dn {
-    display: none;
+  display: none;
 }
 .db {
-    display: block;
+  display: block;
 }
 .dib {
-    display: inline-block;
+  display: inline-block;
 }
 .di {
-    display: inline;
+  display: inline;
 }
 
 .vv {
-    visibility: visible;
+  visibility: visible;
 }
 .vh {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 .ovh {
-    overflow: hidden;
-    zoom: 1;
+  overflow: hidden;
+  zoom: 1;
 }
 .ova {
-    overflow: auto;
+  overflow: auto;
 }
 .ovs {
-    overflow: scroll;
+  overflow: scroll;
 }
 .ovv {
-    overflow: visible;
+  overflow: visible;
 }
 
 .cpa {
-    clip: auto;
+  clip: auto;
 }
 
 .rzn {
-    resize: none;
+  resize: none;
 }
 .rzv {
-    resize: vertical;
+  resize: vertical;
 }
 .rzh {
-    resize: horizontal;
+  resize: horizontal;
 }
 
 .curp {
-    cursor: pointer;
+  cursor: pointer;
 }
 .cura {
-    cursor: auto;
+  cursor: auto;
 }
 .curm {
-    cursor: move;
+  cursor: move;
 }
 
 .bxzcb {
-    box-sizing: content-box;
+  box-sizing: content-box;
 }
 .bxzbb {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .zi0 {
-    z-index: 0;
+  z-index: 0;
 }
 
 .fl {
-    float: left;
+  float: left;
 }
 
 .fr {
-    float: right;
+  float: right;
 }
 
 .db {
-    display: block;
+  display: block;
 }
 
 .dib {
-    display: inline-block;
-    *display: inline;
-    zoom: 1;
-}
-
-.dit {
-    display: table-cell;
-    width: 8000px;
-    *width: auto;
-    zoom: 1;
+  display: inline-block;
+  zoom: 1;
 }
 
 .di {
-    display: inline;
+  display: inline;
 }
 
 .dn {
-    display: none;
+  display: none;
 }
 
 .cl {
-    clear: left;
+  clear: left;
 }
 
 .cr {
-    clear: right;
+  clear: right;
 }
 
 .cb {
-    clear: both;
+  clear: both;
 }
 
 .tdu {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .tdl {
-    text-decoration: line-through;
+  text-decoration: line-through;
 }
 
 .tdn {
+  text-decoration: none;
+  &:hover {
     text-decoration: none;
-    &:hover {
-        text-decoration: none;
-    }
+  }
 }
 
 .eq {
-    padding-bottom: 30000px;
-    margin-bottom: -30000px;
+  padding-bottom: 30000px;
+  margin-bottom: -30000px;
 }
 
 .loop(@n,@sortname, @name, @size, @start: 0) when (@n >= 0) {
-    @temp: @start + (@n * @size);
-    .@{sortname}@{temp} {
-        @{name}: @temp * 1px;
-    }
-    .loop((@n - 1), @sortname, @name, @size, @start);
+  @temp: @start + (@n * @size);
+  .@{sortname}@{temp} {
+    @{name}: @temp * 1px;
+  }
+  .loop((@n - 1), @sortname, @name, @size, @start);
 }
 
 /**
@@ -287,33 +279,33 @@ html {
 */
 .loop(10, fz, font-size, 2, 12);
 .fz0 {
-    font-size: 0;
+  font-size: 0;
 }
 .fwn {
-    font-weight: normal;
+  font-weight: normal;
 }
 .fwb {
-    font-weight: bold;
+  font-weight: bold;
 }
 .fwbr {
-    font-weight: bolder;
+  font-weight: bolder;
 }
 .fwlr {
-    font-weight: lighter;
+  font-weight: lighter;
 }
 
 .fsn {
-    font-style: normal;
+  font-style: normal;
 }
 .fsi {
-    font-style: italic;
+  font-style: italic;
 }
 
 .fvn {
-    font-variant: normal;
+  font-variant: normal;
 }
 .fvsc {
-    font-variant: small-caps;
+  font-variant: small-caps;
 }
 
 /**
@@ -339,145 +331,145 @@ html {
 */
 
 .vasp {
-    vertical-align: super;
+  vertical-align: super;
 }
 .vasb {
-    vertical-align: sub;
+  vertical-align: sub;
 }
 .vat {
-    vertical-align: top;
+  vertical-align: top;
 }
 .vab {
-    vertical-align: bottom;
+  vertical-align: bottom;
 }
 .vam {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 .vatt {
-    vertical-align: text-top;
+  vertical-align: text-top;
 }
 .vatb {
-    vertical-align: text-bottom;
+  vertical-align: text-bottom;
 }
 .vabl {
-    vertical-align: baseline;
+  vertical-align: baseline;
 }
 
 .tal {
-    text-align: left;
+  text-align: left;
 }
 .tar {
-    text-align: right;
+  text-align: right;
 }
 .tac {
-    text-align: center;
+  text-align: center;
 }
 .taj {
-    text-align: justify;
+  text-align: justify;
 }
 
 .tala {
-    text-align-last: auto;
+  text-align-last: auto;
 }
 .tall {
-    text-align-last: left;
+  text-align-last: left;
 }
 .talr {
-    text-align-last: right;
+  text-align-last: right;
 }
 .talc {
-    text-align-last: center;
+  text-align-last: center;
 }
 
 .tdn {
-    text-decoration: none;
+  text-decoration: none;
 }
 .tdu {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 .tdo {
-    text-decoration: overline;
+  text-decoration: overline;
 }
 .tdl {
-    text-decoration: line-through;
+  text-decoration: line-through;
 }
 
 .ti- {
-    text-indent: -9999px;
+  text-indent: -9999px;
 }
 
 .tja {
-    text-justify: auto;
+  text-justify: auto;
 }
 .tjiw {
-    text-justify: inter-word;
+  text-justify: inter-word;
 }
 .tjii {
-    text-justify: inter-ideograph;
+  text-justify: inter-ideograph;
 }
 
 .ttn {
-    text-transform: none;
+  text-transform: none;
 }
 .ttc {
-    text-transform: capitalize;
+  text-transform: capitalize;
 }
 .ttu {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 .ttl {
-    text-transform: lowercase;
+  text-transform: lowercase;
 }
 
 .lts {
-    letter-spacing: 0;
+  letter-spacing: 0;
 }
 .lts-4 {
-    letter-spacing: -4px;
+  letter-spacing: -4px;
 }
 .lts-6 {
-    letter-spacing: -6px;
+  letter-spacing: -6px;
 }
 
 .whsn {
-    white-space: normal;
+  white-space: normal;
 }
 .whsp {
-    white-space: pre;
+  white-space: pre;
 }
 .whsnw {
-    white-space: nowrap;
+  white-space: nowrap;
 }
 .whspw {
-    white-space: pre-wrap;
+  white-space: pre-wrap;
 }
 .whspl {
-    white-space: pre-line;
+  white-space: pre-line;
 }
 
 .wobn {
-    word-break: normal;
+  word-break: normal;
 }
 .wobk {
-    word-break: keep-all;
+  word-break: keep-all;
 }
 .wobba {
-    word-break: break-all;
+  word-break: break-all;
 }
 
 .wownm {
-    word-wrap: normal;
+  word-wrap: normal;
 }
 .wown {
-    word-wrap: none;
+  word-wrap: none;
 }
 .wowb {
-    word-wrap: break-word;
+  word-wrap: break-word;
 }
 
 .wwb {
-    word-break: normal;
-    word-wrap: break-word;
+  word-break: normal;
+  word-wrap: break-word;
 }
 
 /**
@@ -485,40 +477,40 @@ html {
 */
 
 .bgt {
-    background: transparent;
+  background: transparent;
 }
 
 .bgszct {
-    background-size: contain;
+  background-size: contain;
 }
 .bgszcv {
-    background-size: cover;
+  background-size: cover;
 }
 
 /**
 * 特殊
 */
 .loopClamp (@n) when (@n>0) {
-    .clamp_@{n} {
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: @n;
-        -moz-box-orient: vertical;
-        -moz-line-clamp: @n;
-        text-overflow: ellipsis;
-    }
-    .loopClamp(@n - 1);
+  .clamp_@{n} {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: @n;
+    -moz-box-orient: vertical;
+    -moz-line-clamp: @n;
+    text-overflow: ellipsis;
+  }
+  .loopClamp(@n - 1);
 }
 .loopClamp(3);
 
 .grayscale {
-    filter: grayscale(1);
+  filter: grayscale(1);
 }
 
 .flipy {
-    transform: scaleY(-1);
+  transform: scaleY(-1);
 }
 
 .flipx {
-    transform: scaleX(-1);
+  transform: scaleX(-1);
 }

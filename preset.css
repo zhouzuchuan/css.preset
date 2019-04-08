@@ -202,13 +202,6 @@ html {
 }
 .dib {
   display: inline-block;
-  *display: inline;
-  zoom: 1;
-}
-.dit {
-  display: table-cell;
-  width: 8000px;
-  *width: auto;
   zoom: 1;
 }
 .di {

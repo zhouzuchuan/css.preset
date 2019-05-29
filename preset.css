@@ -47,11 +47,15 @@ html {
 .flex-box.vertical > .item {
   overflow: auto;
 }
-.flex-box .box-pack {
+.flex-box > .box-pack {
   display: -webkit-box;
   -webkit-box-orient: horizontal;
   -webkit-box-pack: center;
   -webkit-box-align: center;
+}
+.flex-box > .box-pack > svg {
+  display: block;
+  margin: auto;
 }
 .help-middle {
   height: 100%;

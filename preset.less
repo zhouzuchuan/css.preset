@@ -43,11 +43,16 @@ html {
       overflow: auto;
     }
   }
-  .box-pack {
+  & > .box-pack {
     display: -webkit-box;
     -webkit-box-orient: horizontal;
     -webkit-box-pack: center;
     -webkit-box-align: center;
+
+    & > svg {
+      display: block;
+      margin: auto;
+    }
   }
 }
 

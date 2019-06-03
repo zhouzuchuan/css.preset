@@ -120,6 +120,12 @@ html {
 .flr {
   float: right;
 }
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
 .cln {
   clear: none;
 }
@@ -140,6 +146,7 @@ html {
 }
 .dib {
   display: inline-block;
+  zoom: 1;
 }
 .di {
   display: inline;
@@ -194,34 +201,6 @@ html {
 }
 .zi0 {
   z-index: 0;
-}
-.fl {
-  float: left;
-}
-.fr {
-  float: right;
-}
-.db {
-  display: block;
-}
-.dib {
-  display: inline-block;
-  zoom: 1;
-}
-.di {
-  display: inline;
-}
-.dn {
-  display: none;
-}
-.cl {
-  clear: left;
-}
-.cr {
-  clear: right;
-}
-.cb {
-  clear: both;
 }
 .tdu {
   text-decoration: underline;

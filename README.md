@@ -173,7 +173,7 @@ flex 布局， 子类 `item`（拉伸填充剩余区域）`box-pack`（让其内
 
 ```html
 <div style="height: 400px;">
-  <div class="flex-box">
+  <div class="flex-box vertial">
     <div>header</div>
     <div class="item">content</div>
     <div>footer</div>

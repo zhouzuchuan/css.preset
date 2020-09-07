@@ -42,6 +42,7 @@ npm install css.preset
 | padding-left   | 5    | `pl`  | `pl0` - `pl50`   |
 | line-height    | 2    | `lh`  | `lh0` - `lh24`   |
 | font-size      | 2    | `fz`  | `fz0` - `fz24`   |
+| font-weight    | 100  | `fw`  | `fw0` - `fw1000` |
 | padding-left   | 5    | `pl`  | `pl0` - `pl50`   |
 | padding-left   | 5    | `pl`  | `pl0` - `pl50`   |
 
@@ -50,6 +51,8 @@ npm install css.preset
 | 属性            | Rule            | 类名         |
 | --------------- | --------------- | ------------ |
 | width           | 100%            | `wp100`      |
+|                 | 50%             | `wp50`       |
+|                 | 33.33%          | `wp33`       |
 | height          | 100%            | `hp100`      |
 | position        | static          | `pss`        |
 |                 | relative        | `psr`        |
@@ -151,9 +154,9 @@ inline 布局， 通过子类 `item` 来实现
 
 ```html
 <div class="lay-list">
-  <div class="item">1</div>
-  <div class="item">2</div>
-  <div class="item">3</div>
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
 </div>
 ```
 
@@ -163,9 +166,9 @@ flex 布局， 子类 `item`（拉伸填充剩余区域）`box-pack`（让其内
 
 ```html
 <div class="flex-box">
-  <div class="box-pack">label</div>
-  <div class="item">content</div>
-  <div>tip</div>
+    <div class="box-pack">label</div>
+    <div class="item">content</div>
+    <div>tip</div>
 </div>
 ```
 
@@ -173,11 +176,23 @@ flex 布局， 子类 `item`（拉伸填充剩余区域）`box-pack`（让其内
 
 ```html
 <div style="height: 400px;">
-  <div class="flex-box vertial">
-    <div>header</div>
-    <div class="item">content</div>
-    <div>footer</div>
-  </div>
+    <div class="flex-box vertial">
+        <div>header</div>
+        <div class="item">content</div>
+        <div>footer</div>
+    </div>
+</div>
+```
+
+`middle` 伸缩项水平垂直居中
+
+```html
+<div style="height: 400px;">
+    <div class="flex-box middle">
+        <div>header</div>
+        <div class="item">content</div>
+        <div>footer</div>
+    </div>
 </div>
 ```
 
@@ -187,7 +202,7 @@ flex 布局， 子类 `item`（拉伸填充剩余区域）`box-pack`（让其内
 
 ```html
 <div class="help-middle">
-  <div>居中元素</div>
+    <div>居中元素</div>
 </div>
 ```
 

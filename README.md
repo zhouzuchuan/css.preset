@@ -69,8 +69,10 @@ npm install css.preset
 |                 | block           | `db`         |
 |                 | inline-block    | `dib`        |
 |                 | inline          | `di`         |
+|                 | flex            | `df`         |
+|                 | inline-flex     | `dif`        |
 | visibility      | visible         | `vv`         |
-|                 | visibility      | `vh`         |
+|                 | hidden          | `vh`         |
 | overflow        | hidden          | `ovh`        |
 |                 | auto            | `ova`        |
 |                 | scroll          | `ovs`        |
@@ -85,6 +87,7 @@ npm install css.preset
 | box-sizing      | content-box     | `bxzcb`      |
 |                 | border-box      | `bxzbb`      |
 | z-index         | 0               | `zi0`        |
+|                 | -1              | `zi-1`       |
 | text-decoration | underline       | `tdu`        |
 |                 | line-through    | `tdl`        |
 |                 | none            | `tdn`        |
@@ -189,9 +192,9 @@ flex 布局， 子类 `item`（拉伸填充剩余区域）`box-pack`（让其内
 ```html
 <div style="height: 400px;">
     <div class="flex-box middle">
-        <div>header</div>
-        <div class="item">content</div>
-        <div>footer</div>
+        <div>left</div>
+        <div class="item">centent</div>
+        <div>right</div>
     </div>
 </div>
 ```
@@ -223,3 +226,7 @@ flex 布局， 子类 `item`（拉伸填充剩余区域）`box-pack`（让其内
 #### `eq`
 
 高度背景对齐填充
+
+#### `not-viewport`
+
+将元素移除视口可见区域

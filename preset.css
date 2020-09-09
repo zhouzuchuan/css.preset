@@ -114,6 +114,12 @@ html {
 .hp100 {
   height: 100%;
 }
+.not-viewport {
+  position: fixed;
+  top: -100%;
+  left: -100%;
+  z-index: -1;
+}
 .pss {
   position: static;
 }
@@ -165,6 +171,16 @@ html {
 }
 .di {
   display: inline;
+}
+.df {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.dif {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 .vv {
   visibility: visible;

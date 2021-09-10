@@ -269,23 +269,6 @@ html {
     margin-bottom: -30000px;
 }
 
-.loop(@n, @sortname, @name, @size, @start: 0, @basevalue: 1px) when (@n >= 0) {
-    @temp: @start + (@n * @size);
-    .@{sortname}@{temp} {
-        @{name}: @temp * @basevalue;
-    }
-    .loop((@n - 1), @sortname, @name, @size, @start,  @basevalue);
-}
-
-/**
-* 行距
-*/
-.loop(10, lh, line-height, 2, 12);
-
-/**
-* 字体
-*/
-.loop(10, fz, font-size, 2, 12);
 .fz0 {
     font-size: 0;
 }
@@ -301,7 +284,6 @@ html {
 .fwlr {
     font-weight: lighter;
 }
-.loop(10, fw, font-weight, 100, 0, 1);
 
 .fsn {
     font-style: normal;
@@ -316,33 +298,6 @@ html {
 .fvsc {
     font-variant: small-caps;
 }
-
-/**
-* 边距
-*/
-.mara {
-    margin: auto;
-}
-.loop(10, mar, margin, 5);
-.loop(10, mt, margin-top, 5);
-.loop(10, mr, margin-right, 5);
-.loop(10, mb, margin-bottom, 5);
-.loop(10, ml, margin-left, 5);
-
-.loop(10, mar-, margin, 5, 0, -1px);
-.loop(10, mt-, margin-top, 5, 0, -1px);
-.loop(10, mr-, margin-right, 5, 0, -1px);
-.loop(10, mb-, margin-bottom, 5, 0, -1px);
-.loop(10, ml-, margin-left, 5, 0, -1px);
-
-/**
-* 填充
-*/
-.loop(10, pad, padding, 5);
-.loop(10, pt, padding-top, 5);
-.loop(10, pr, padding-right, 5);
-.loop(10, pb, padding-bottom, 5);
-.loop(10, pl, padding-left, 5);
 
 /**
 * 文字
@@ -508,19 +463,6 @@ html {
 /**
 * 特殊
 */
-.loopClamp (@n) when (@n>0) {
-    .clamp_@{n} {
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: @n;
-        -moz-box-orient: vertical;
-        -moz-line-clamp: @n;
-        text-overflow: ellipsis;
-    }
-    .loopClamp(@n - 1);
-}
-.loopClamp(3);
-
 .grayscale {
     filter: grayscale(1);
 }
@@ -532,3 +474,5 @@ html {
 .flipx {
     transform: scaleX(-1);
 }
+
+@import url(./calc.less);

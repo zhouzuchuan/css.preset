@@ -1,0 +1,99 @@
+@spacingvalue: 4;
+
+@defaultColors: #000, #111, #222, #333, #444, #555, #666, #777, #888, #999;
+
+// 默认纯色
+each(@defaultColors, .(@v, @k, @i) {  
+    @prefixIdx: @i - 1;
+    .cor-@{prefixIdx} {
+        color: @v !important;
+    }
+});
+
+// 字号
+each(range(12, 40, 2), .(@v, @k, @i) {  
+    .fz-@{v} {
+        font-size: @v * 1px !important;
+    }
+});
+
+// 行高
+each(range(12, 40, 2), .(@v, @k, @i) {  
+    .lh-@{v} {
+        line-height: @v * 1px !important;
+    }
+});
+
+// 字重
+each(range(1, 10, 1), .(@v, @k) {  
+    .fw-@{v} {
+        font-weight: @v * 100 !important;
+    }
+});
+
+// flex
+each(range(1, 4, 1), .(@v, @k, @i) {  
+    .flex-@{v} {
+        flex: @v !important;
+    }
+});
+
+.loop(@n, @sortname, @name, @size, @start: 0, @basevalue: 1px) when (@n >= 0) {
+    @temp: @start + (@n * @size);
+    .@{sortname}-@{n} {
+        .loop2(@index) when (@index <= length(@name)) {
+            @key: extract(@name, @index);
+            @{key}: @temp * @basevalue !important;
+            .loop2(@index+1);
+        }
+        .loop2(1);
+    }
+    .-@{sortname}-@{n} {
+        .loop2(@index) when (@index <= length(@name)) {
+            @key: extract(@name, @index);
+            @{key}: -(@temp * @basevalue) !important;
+            .loop2(@index+1);
+        }
+        .loop2(1);
+    }
+    .loop((@n - 1), @sortname, @name, @size, @start, @basevalue);
+}
+
+@spacingMap: {
+    mx: margin-left, margin-right;
+    my: margin-top, margin-bottom;
+    px: padding-left, padding-right;
+    py: padding-top, padding-bottom;
+    ma: margin;
+    mt: margin-top;
+    mr: margin-right;
+    mb: margin-bottom;
+    ml: margin-left;
+    pa: padding;
+    pt: padding-top;
+    pr: padding-right;
+    pb: padding-bottom;
+    pl: padding-left;
+};
+
+// 内外间距
+each(@spacingMap, .(@v, @k, @i) { 
+    .loop(20, @k, @v, @spacingvalue);
+});
+
+.ma-auto {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+// 多行隐藏
+each(range(1, 5, 1), .(@v) {  
+    .clamp-@{v} {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: @v;
+        -moz-box-orient: vertical;
+        -moz-line-clamp: @v;
+        text-overflow: ellipsis;
+    }
+});

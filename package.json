@@ -1,6 +1,6 @@
 {
     "name": "css.preset",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "description": "css preset",
     "main": "preset.min.css",
     "style": "preset.min.css",

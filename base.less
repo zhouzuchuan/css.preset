@@ -1,0 +1,420 @@
+.lay-list {
+    font-size: 0;
+    letter-spacing: -4px;
+    li,
+    & > .item {
+        display: inline-block;
+        font-size: 12px;
+        letter-spacing: 0;
+        vertical-align: top;
+    }
+}
+
+.flex-box {
+    display: flex;
+    width: 100%;
+
+    &.middle {
+        align-items: center;
+        justify-content: center;
+    }
+
+    & > .item {
+        display: block;
+        flex: 1;
+        min-width: 0;
+    }
+
+    &.vertical {
+        flex-direction: column;
+        height: 100%;
+        & > .item {
+            overflow: auto;
+        }
+    }
+}
+
+.cf {
+    zoom: 1;
+
+    &::after {
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+        content: '.';
+    }
+}
+
+.ell {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.not-viewport {
+    position: fixed;
+    top: -100%;
+    left: -100%;
+    z-index: -1;
+}
+
+.wp100 {
+    width: 100%;
+}
+.wp50 {
+    width: 50%;
+}
+.wp33 {
+    width: 33.33%;
+}
+
+.hp100 {
+    height: 100%;
+}
+
+.pss {
+    position: static;
+}
+.psr {
+    position: relative;
+}
+.psa {
+    position: absolute;
+}
+.psf {
+    position: fixed;
+}
+
+.fln {
+    float: none;
+}
+.fll {
+    float: left;
+}
+.flr {
+    float: right;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.cln {
+    clear: none;
+}
+.cll {
+    clear: left;
+}
+.clr {
+    clear: right;
+}
+.clb {
+    clear: both;
+}
+
+.dn {
+    display: none;
+}
+.db {
+    display: block;
+}
+.dib {
+    display: inline-block;
+    zoom: 1;
+}
+.di {
+    display: inline;
+}
+.df {
+    display: flex;
+}
+.dif {
+    display: inline-flex;
+}
+
+.vv {
+    visibility: visible;
+}
+.vh {
+    visibility: hidden;
+}
+
+.ovh {
+    overflow: hidden;
+    zoom: 1;
+}
+.ova {
+    overflow: auto;
+}
+.ovs {
+    overflow: scroll;
+}
+.ovv {
+    overflow: visible;
+}
+
+.cpa {
+    clip: auto;
+}
+
+.rzn {
+    resize: none;
+}
+.rzv {
+    resize: vertical;
+}
+.rzh {
+    resize: horizontal;
+}
+
+.curp {
+    cursor: pointer;
+}
+.cura {
+    cursor: auto;
+}
+.curm {
+    cursor: move;
+}
+
+.bxzcb {
+    box-sizing: content-box;
+}
+.bxzbb {
+    box-sizing: border-box;
+}
+
+.zi0 {
+    z-index: 0;
+}
+
+.tdu {
+    text-decoration: underline;
+}
+
+.tdl {
+    text-decoration: line-through;
+}
+
+.tdn {
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.eq {
+    padding-bottom: 30000px;
+    margin-bottom: -30000px;
+}
+
+.fz0 {
+    font-size: 0;
+}
+.fwn {
+    font-weight: normal;
+}
+.fwb {
+    font-weight: bold;
+}
+.fwbr {
+    font-weight: bolder;
+}
+.fwlr {
+    font-weight: lighter;
+}
+
+.fsn {
+    font-style: normal;
+}
+.fsi {
+    font-style: italic;
+}
+
+.fvn {
+    font-variant: normal;
+}
+.fvsc {
+    font-variant: small-caps;
+}
+
+/**
+* 文字
+*/
+
+.vasp {
+    vertical-align: super;
+}
+.vasb {
+    vertical-align: sub;
+}
+.vat {
+    vertical-align: top;
+}
+.vab {
+    vertical-align: bottom;
+}
+.vam {
+    vertical-align: middle;
+}
+.vatt {
+    vertical-align: text-top;
+}
+.vatb {
+    vertical-align: text-bottom;
+}
+.vabl {
+    vertical-align: baseline;
+}
+
+.tal {
+    text-align: left;
+}
+.tar {
+    text-align: right;
+}
+.tac {
+    text-align: center;
+}
+.taj {
+    text-align: justify;
+}
+
+.tala {
+    text-align-last: auto;
+}
+.tall {
+    text-align-last: left;
+}
+.talr {
+    text-align-last: right;
+}
+.talc {
+    text-align-last: center;
+}
+
+.tdn {
+    text-decoration: none;
+}
+.tdu {
+    text-decoration: underline;
+}
+.tdo {
+    text-decoration: overline;
+}
+.tdl {
+    text-decoration: line-through;
+}
+
+.ti- {
+    text-indent: -9999px;
+}
+
+.tja {
+    text-justify: auto;
+}
+.tjiw {
+    text-justify: inter-word;
+}
+.tjii {
+    text-justify: inter-ideograph;
+}
+
+.ttn {
+    text-transform: none;
+}
+.ttc {
+    text-transform: capitalize;
+}
+.ttu {
+    text-transform: uppercase;
+}
+.ttl {
+    text-transform: lowercase;
+}
+
+.lts {
+    letter-spacing: 0;
+}
+.lts-4 {
+    letter-spacing: -4px;
+}
+.lts-6 {
+    letter-spacing: -6px;
+}
+
+.whsn {
+    white-space: normal;
+}
+.whsp {
+    white-space: pre;
+}
+.whsnw {
+    white-space: nowrap;
+}
+.whspw {
+    white-space: pre-wrap;
+}
+.whspl {
+    white-space: pre-line;
+}
+
+.wobn {
+    word-break: normal;
+}
+.wobk {
+    word-break: keep-all;
+}
+.wobba {
+    word-break: break-all;
+}
+
+.wownm {
+    word-wrap: normal;
+}
+.wown {
+    word-wrap: none;
+}
+.wowb {
+    word-wrap: break-word;
+}
+
+.wwb {
+    word-break: normal;
+    word-wrap: break-word;
+}
+
+/**
+* 背景
+*/
+
+.bgt {
+    background: transparent;
+}
+
+.bgszct {
+    background-size: contain;
+}
+.bgszcv {
+    background-size: cover;
+}
+
+/**
+* 特殊
+*/
+.grayscale {
+    filter: grayscale(1);
+}
+
+.flipy {
+    transform: scaleY(-1);
+}
+
+.flipx {
+    transform: scaleX(-1);
+}

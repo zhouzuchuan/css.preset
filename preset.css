@@ -14,6 +14,27 @@
 html {
   -webkit-text-size-adjust: 100%;
 }
+.help-middle {
+  height: 100%;
+  font-size: 0;
+  text-align: center;
+  letter-spacing: -4px;
+}
+.help-middle::after {
+  display: inline-block;
+  width: 0;
+  height: 100%;
+  letter-spacing: 0;
+  vertical-align: middle;
+  content: '';
+}
+.help-middle > :first-child {
+  display: inline-block;
+  font-size: 12px;
+  text-align: left;
+  letter-spacing: 0;
+  vertical-align: middle;
+}
 .lay-list {
   font-size: 0;
   letter-spacing: -4px;
@@ -55,37 +76,6 @@ html {
 }
 .flex-box.vertical > .item {
   overflow: auto;
-}
-.flex-box > .box-pack {
-  display: -webkit-box;
-  -webkit-box-orient: horizontal;
-  -webkit-box-pack: center;
-  -webkit-box-align: center;
-}
-.flex-box > .box-pack > svg {
-  display: block;
-  margin: auto;
-}
-.help-middle {
-  height: 100%;
-  font-size: 0;
-  text-align: center;
-  letter-spacing: -4px;
-}
-.help-middle::after {
-  display: inline-block;
-  width: 0;
-  height: 100%;
-  letter-spacing: 0;
-  vertical-align: middle;
-  content: '';
-}
-.help-middle > :first-child {
-  display: inline-block;
-  font-size: 12px;
-  text-align: left;
-  letter-spacing: 0;
-  vertical-align: middle;
 }
 .cf {
   zoom: 1;

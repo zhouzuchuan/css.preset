@@ -4,7 +4,7 @@
 
 // 默认纯色
 each(@defaultColors, .(@v, @k, @i) {  
-    @prefixIdx: @i - 1;
+    @prefixIdx: (@i - 1);
     .cor-@{prefixIdx} {
         color: @v !important;
     }

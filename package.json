@@ -1,6 +1,6 @@
 {
     "name": "css.preset",
-    "version": "0.1.2",
+    "version": "0.2.0",
     "description": "css preset",
     "main": "preset.min.css",
     "style": "preset.min.css",
@@ -8,8 +8,8 @@
         "build": "lessc preset.less > preset.css  --autoprefix='last 2 version' ",
         "prebuild": "lessc preset.less > preset.min.css  --autoprefix='last 2 version' --clean-css='--s1 --advanced --compatibility=ie8'",
         "prepublish": "npm run build",
-        "version": "npm run build && git add .",
-        "postversion": "git push && git push --tags"
+        "version": "npm run build",
+        "postversion": "git add . && git commit -am '' && git push && git push --tags"
     },
     "repository": {
         "type": "git",

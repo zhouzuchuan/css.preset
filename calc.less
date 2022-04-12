@@ -33,6 +33,7 @@ each(range(1, @fontWeightLength), .(@v, @k) {
 each(range(0, @flexLength), .(@v, @k) {  
     .flex-@{v} {
         flex: @v !important;
+        min-width: 0;
     }
 });
 

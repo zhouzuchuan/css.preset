@@ -11,14 +11,14 @@ each(@defaultColors, .(@v, @k, @i) {
 // 字号
 each(range(0, @fontSizeLength), .(@v, @k) {  
     .fz-@{v} {
-        font-size: (@v * @baseFontSizeDiff) !important;
+        font-size: (@v * @baseFontSizeDiff) * @numberUnit !important;
     }
 });
 
 // 行高
 each(range(0, @lineHeightLength), .(@v, @k) {  
     .lh-@{v} {
-        line-height: (@v * @baseLineHeightDiff) !important;
+        line-height: (@v * @baseLineHeightDiff) * @numberUnit !important;
     }
 });
 
@@ -61,20 +61,7 @@ each(range(0, @flexLength), .(@v, @k) {
     mb: margin-bottom;
     ml: margin-left;
 };
-
-// .sortLoop(@dataMap, @negative: false) {
-//     each(@dataMap, .(@name, @sortname, @i) {  
-//         each(range(0, @spacingLength), .(@n) {
-//             @temp: if(@negative, -@sortname, @sortname);
-//             .@{temp}-@{n} {
-//                 each(range(1, length(@name)), .(@v, @k, @i) {  
-//                     @key: extract(@name, @i);
-//                     @{key}: (if(@negative, -1, 1) * (@n * @baseSpacingDiff)) !important;
-//                 });
-//             } 
-//         });
-//     });
-// }
+ 
 
 .sortLoop(@dataMap ) {
     each(@dataMap, .(@name, @sortname, @i) {  
@@ -82,7 +69,7 @@ each(range(0, @flexLength), .(@v, @k) {
             .@{sortname}-@{n} {
                 each(range(1, length(@name)), .(@v, @k, @i) {  
                     @key: extract(@name, @i);
-                    @{key}: (1 * (@n * @baseSpacingDiff)) !important;
+                    @{key}: (1 * (@n * @baseSpacingDiff)) * @numberUnit !important;
                 });
             } 
         });
@@ -95,7 +82,7 @@ each(range(0, @flexLength), .(@v, @k) {
             .-@{sortname}-@{n} {
                 each(range(1, length(@name)), .(@v, @k, @i) {  
                     @key: extract(@name, @i);
-                    @{key}: (-1 * (@n * @baseSpacingDiff)) !important;
+                    @{key}: (-1 * (@n * @baseSpacingDiff)) * @numberUnit !important;
                 });
             } 
         });

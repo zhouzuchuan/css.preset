@@ -28,23 +28,21 @@ npm install css.preset
 命名规则
 属性简称加上数值
 
-| 属性           | 间隔 | 简称  |                  |
-| -------------- | ---- | ----- | ---------------- |
-| margin         | 5    | `mar` | `mar0` - `mar50` |
-| margin-top     | 5    | `mt`  | `mt0` - `mt50`   |
-| margin-bottom  | 5    | `mb`  | `mb0` - `mb50`   |
-| margin-left    | 5    | `ml`  | `ml0` - `ml50`   |
-| margin-right   | 5    | `mr`  | `mr0` - `mr50`   |
-| padding        | 5    | `pad` | `pad0` - `pad50` |
-| padding-top    | 5    | `pt`  | `pt0` - `pt50`   |
-| padding-right  | 5    | `pr`  | `pr0` - `pr50`   |
-| padding-bottom | 5    | `pb`  | `pb0` - `pb50`   |
-| padding-left   | 5    | `pl`  | `pl0` - `pl50`   |
-| line-height    | 2    | `lh`  | `lh0` - `lh24`   |
-| font-size      | 2    | `fz`  | `fz0` - `fz24`   |
-| font-weight    | 100  | `fw`  | `fw0` - `fw1000` |
-| padding-left   | 5    | `pl`  | `pl0` - `pl50`   |
-| padding-left   | 5    | `pl`  | `pl0` - `pl50`   |
+| 属性           | 间隔 | 简称    |                    |
+| -------------- | ---- | ----- | ----------------   |
+| margin         | 4    | `ma`  | `ma-0` - `ma-20`   |
+| margin-top     | 4    | `mt`  | `mt-0` - `mt-20`   |
+| margin-bottom  | 4    | `mb`  | `mb-0` - `mb-20`   |
+| margin-left    | 4    | `ml`  | `ml-0` - `ml-20`   |
+| margin-right   | 4    | `mr`  | `mr-0` - `mr-20`   |
+| padding        | 4    | `pa`  | `pa-0` - `pa-20`   |
+| padding-top    | 4    | `pt`  | `pt-0` - `pt-20`   |
+| padding-right  | 4    | `pr`  | `pr-0` - `pr-20`   |
+| padding-bottom | 4    | `pb`  | `pb-0` - `pb-20`   |
+| padding-left   | 4    | `pl`  | `pl-0` - `pl-20`   |
+| line-height    | 2    | `lh`  | `lh-0` - `lh-20`   |
+| font-size      | 2    | `fz`  | `fz-0` - `fz-20`   |
+| font-weight    | 100  | `fw`  | `fw0` - `fw1000`   | 
 
 ### 单一规则
 

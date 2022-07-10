@@ -1,12 +1,13 @@
 {
     "name": "css.preset",
-    "version": "0.2.1",
+    "version": "0.2.2",
     "description": "css preset",
     "main": "preset.min.css",
     "style": "preset.min.css",
     "scripts": {
-        "build": "lessc preset.less > preset.css  --autoprefix='last 2 version' ",
-        "prebuild": "lessc preset.less > preset.min.css  --autoprefix='last 2 version' --clean-css='--s1 --advanced --compatibility=ie8'",
+        "build": "lessc preset.less > preset.css --autoprefix='last 2 version' & npm run build:applet",
+        "prebuild": "lessc preset.less > preset.min.css --autoprefix='last 2 version' --clean-css='--s1 --advanced --compatibility=ie8'",
+        "build:applet": "lessc preset.applet.less > preset.applet.min.css  --autoprefix='last 2 version' --clean-css='--s1 --advanced --compatibility=ie8'",
         "prepublish": "npm run build",
         "version": "npm run build",
         "postversion": "git add . && git commit -am '' && git push && git push --tags"
